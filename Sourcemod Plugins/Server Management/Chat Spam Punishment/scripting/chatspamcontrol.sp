@@ -398,13 +398,6 @@ public void OnConVarChanged_PunishmentTimeSC(ConVar convar, const char[] oldValu
 		return;
 	}
 	
-	int timeleft = GetConVarInt(g_cPunishmentTimeSC);
-	int mins, secs;
-	if (timeleft > 0)
-	{
-		mins = timeleft / 60;
-		secs = timeleft % 60;
-	}
-	PrintToServer("[SM] Player chat spam tokens will reset after %d:%02d.", mins, secs);
+	PrintToServer("[SM] Gag and ban time adjusted to %i minute%s.", GetConVarInt(g_cPunishmentTimeSC), GetConVarInt(g_cPunishmentTimeSC) <= 1 ? "" : "s");
 	return;
 } 
