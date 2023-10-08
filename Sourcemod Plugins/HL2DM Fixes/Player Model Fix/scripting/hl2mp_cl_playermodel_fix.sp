@@ -217,7 +217,7 @@ public Action changeteamtimer(Handle timer, DataPack pack)
 		if (!IsClientInGame(client))
 			return Plugin_Stop;
 		
-		ClientCommand(client, "cl_playermodel models/humans/group03/female_04.mdl");
+		ClientCommand(client, "cl_playermodel models/humans/group03/female_04.mdl"); /*It does not matter the model here, it seems to pick randomly anyway based on the team you are on*/
 		SetEntityRenderColor(client, 255, 255, 255, 255);
 		if (GetConVarBool(changename_playermodelmsg))
 		{
