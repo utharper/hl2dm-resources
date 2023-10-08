@@ -19,7 +19,7 @@ PLUGIN DEFINES
 #define PLUGIN_NAME								"HL2MP - Connect Status"
 #define PLUGIN_AUTHOR							"Peter Brev"
 #define PLUGIN_VERSION							"1.0.2"
-#define PLUGIN_DESCRIPTION						"Formats better looking connecting and disconnecting players messages"
+#define PLUGIN_DESCRIPTION						"Formats better looking connecting and disconnecting player messages"
 #define PLUGIN_URL								"N/A"
 
 /*Team Colors*/
